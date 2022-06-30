@@ -5,7 +5,7 @@ var UserSchema = new mongoose.Schema({
 	lastName: { type: String, required: true },
 	email: { type: String, required: true },
 	password: { type: String, required: true },
-	status: { type: Boolean, required: true, default: 1 }
+	isAdmin: { type: Boolean, require: true, default: 0 }
 }, { timestamps: true });
 
 // Virtual for user's full name
